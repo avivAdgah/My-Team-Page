@@ -25,6 +25,7 @@ section{
         }
         .photo2{
             background-image: url('images/photo2.png');
+            margin-top: 80px;
         }
         .photo3{
             background-image: url('images/photo3.png');
@@ -34,6 +35,7 @@ section{
         }
         .photo5{
             background-image: url('images/photo5.png');
+            margin-top: 80px;
         }
         .photo6{
             background-image: url('images/photo6.png');
@@ -51,11 +53,40 @@ footer{
     color: darkgray;
 }
 
-@media screen and (min-width: 990px) {
-    .photo2{
-        margin-top: 5em;
+@media screen and (max-width: 990px) {
+    header{
+        margin: 0 2em;
     }
-    .photo5{
-        margin-top: 5em;
+    section {
+        .avatar{
+            .photo4{
+                margin-top: 80px;
+            }
+            .photo5{
+                margin-top: 0;
+            }
+            .photo6{
+                margin-top: 80px;
+            }
+        }
+    }
+  }
+
+  @media screen and (max-width: 660px) {
+    header{
+        margin: 0 2em;
+    }
+    section {
+        .avatar{
+            .photo2{
+                margin-top: 0;
+            }
+            .photo4{
+                margin-top: 0;
+            }
+            .photo6{
+                margin-top: 0;
+            }
+        }
     }
   }
